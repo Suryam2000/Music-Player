@@ -1,0 +1,983 @@
+
+/*-------------body div--------------*/
+
+.body-div{
+    display: flex;
+    padding: 50px 0;
+}
+
+
+
+
+
+#main-container{
+    height: 91vh;
+}
+
+
+/*--------------------------Main------------------------*/
+
+main{
+    height: 90vh;
+    width: 70%;
+    display: inline-block;
+    overflow: scroll;
+    padding: 20px;
+    overflow-x: hidden !important;
+}
+
+
+
+/*------------Music Cards---------*/
+
+#outer-music-cards{
+    position: relative;
+    left: 8vw;
+}
+
+#music-cards{
+    position: absolute;
+    left: 4%;
+    width: 70%;
+    height: auto;
+    display: flex;
+    overflow: visible;
+    justify-content: space-around;
+}
+
+#music-cards img{
+    height: 15vw;
+    width: 28vw;
+    transition: all 0.3s ease-in-out;
+}
+
+#card1{
+    position: relative;
+    left: 41vw;
+    z-index: 2;
+}
+
+
+#card2{
+    position: relative;
+    z-index: 3;
+}
+
+
+#card3{
+    position: relative;
+    right: 41vw;
+    z-index: 1;
+}
+
+#music-cards img:hover{
+    z-index: 4;
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: rgba(165, 159, 159, 0.17) 0px -23px 25px 0px inset, rgba(250, 249, 249, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(141, 140, 140, 0.06) 0px 2px 1px, rgba(133, 130, 130, 0.09) 0px 4px 2px, rgba(134, 131, 131, 0.09) 0px 8px 4px, rgba(161, 161, 161, 0.09) 0px 16px 8px, rgba(128, 123, 123, 0.09) 0px 32px 16px;
+}
+
+
+
+/*------------Latest Release-----------------*/
+
+
+#Latest-Release{
+    position: relative;
+    top: 17vw;
+    height: auto;
+    padding: 10px;
+    width: 80%;
+}
+
+
+#Latest-Release h4{
+    font-weight: 400;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#Latest-Release span{
+    color: grey;
+    font-size: 14px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.col{
+    width: 48%;
+    position: relative;
+}
+
+
+.lr-box{
+    position: relative;
+}
+
+.lr-box img{
+    width: 70px;
+    height: 70px;
+}
+
+.lr-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.lr-center i{
+    color: white;
+    font-size: 1.8rem;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.col:hover i{
+    opacity: 1;
+}
+
+.col:hover{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.col:hover img{
+    opacity: 0.5;
+}
+
+.song-title{
+    display: flex;
+}
+
+.song-title-list{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+
+.song-title-list span{
+    padding-bottom: 8px;
+}
+
+.song-timer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.song-timer a{
+    color: lightgray;
+}
+
+.song-timer label{
+    cursor: pointer;
+    color: lightgray;
+}
+
+
+
+#song-dropdown-menu{
+    background-color: var(--dropdown_bg);
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    z-index: 2;
+    width: 150px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    height: 0;
+    z-index: -2;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.song-timer input{
+    display: none;
+}
+
+.song-timer input:checked ~ div#song-dropdown-menu{
+    opacity: 1;
+    height: 140px;
+    z-index: 1;
+}
+
+#song-dropdown-menu ul{
+    padding-left: 0px;
+}
+
+
+#song-dropdown-menu li{
+    padding: 10px;
+    width: 100%;
+}
+
+#song-dropdown-menu a {
+    display: flex;
+    align-items: center;
+}
+
+#song-dropdown-menu i{
+    padding: 10px;
+    font-size: small;
+}
+
+
+#song-dropdown-menu a:hover{
+    background-color: var(--dropdown_hover_bg);
+}
+
+#song-dropdown-menu a{
+    color: lightgray;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+
+
+/*---------------------Popular Artists------------------*/
+
+#Popular-Artists{
+    position: relative;
+    top: 17vw;
+}
+
+#popular-artists-title h4{
+    font-weight: 400;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#Popular-Artists-box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+
+.artists-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.artists-card img{
+    max-width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.pa-center{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.pa-center i{
+    color: white;
+    font-size: 3rem;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.artists-card span{
+    color: lightgray;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.artists-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.artists-card:hover i{
+    opacity: 1;
+}
+
+.artists-card:hover img{
+    opacity: 0.5;
+}
+
+
+
+
+
+/*---------------Stations-----------------*/
+
+#Stations{
+    position: relative;
+    top: 17vw;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: var(--lightbgcolor);
+    display: flex;
+    align-items: center;
+}
+
+#stations-logo{
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#stations-logo-box{
+    height: 100%;
+    position: relative;
+}
+
+#stations-logo-box img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.stations-title{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+
+#stations-list{
+    width: 85%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+}
+
+
+.stations-card{
+    position: relative;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.stations-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stations-card a{
+    border-radius: 50%;
+}
+
+.stations-card img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.stations-card a:hover img{
+    opacity: 1;
+}
+
+.stations-card a:hover{
+    box-shadow: rgb(0, 0, 0, 0.12) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+/*-------------------Genre-----------------*/
+
+#Genre{
+    position: relative;
+    top: 17vw;
+}
+
+
+#genre-div-box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+
+.genre-box{
+    display: flex;
+    height: 160px;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    opacity: 0.7;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#Genre img{
+    width: 320px;
+    height: 200px;
+    transition: all 0.2s ease-in-out;
+}
+
+.genre-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.genre-box:hover{
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.genre-box:hover img{
+    transform: scale(1.2);
+}
+
+
+
+
+/*------------------Latest English-------------------------*/
+
+
+
+#Latest-English{
+    position: relative;
+    top: 17vw;
+}
+
+#latest-english-title h4{
+    font-weight: 400;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#Latest-English-box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+
+.english-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.english-card img{
+    max-width: 152px;
+    min-height: 110px;
+    transition: all 0.2s ease-in-out;
+}
+
+.le-center{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.le-center i{
+    color: white;
+    font-size: 3rem;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.english-card span{
+    color: lightgray;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.english-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.english-card:hover i{
+    opacity: 1;
+}
+
+.english-card:hover img{
+    opacity: 0.5;
+}
+
+
+
+
+/*------------------Latest Hindi-------------------------*/
+
+
+#Latest-Hindi{
+    position: relative;
+    top: 17vw;
+    padding-bottom: 10vh;
+}
+
+#latest-hindi-title h4{
+    font-weight: 400;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#Latest-Hindi-box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+
+.hindi-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.hindi-card img{
+    max-width: 152px;
+    min-height: 110px;
+    transition: all 0.2s ease-in-out;
+}
+
+.lh-center{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.lh-center i{
+    color: white;
+    font-size: 3rem;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.hindi-card span{
+    color: lightgray;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.hindi-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.hindi-card:hover i{
+    opacity: 1;
+}
+
+.hindi-card:hover img{
+    opacity: 0.5;
+}
+
+
+
+
+/*---------------------------Aside-----------------------*/
+aside{
+    height: 90vh;
+    width: 25%;
+    display: inline-block;
+    overflow: scroll;
+}
+
+
+#aside-div{
+    height: 75vh;
+    overflow: scroll;
+}
+
+
+
+
+#Queue{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+#Queue span{
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+
+.dropdown-link{
+    color: aqua;
+    font-size: 0.7rem;
+}
+
+
+#Queue-list{
+    padding-left: 20px;
+    padding-bottom: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+
+#Queue-list ol{
+    color: lightgray;
+    counter-reset: step;
+    padding-left: 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#Queue-list li{
+    counter-increment: step;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+
+#Queue-list li::before{
+    content: counter(step,decimal-leading-zero);
+    text-align: center;
+    margin-right: 20px;
+    font-size: 0.8rem;
+}
+
+
+.Queue-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Queue-card img{
+    box-shadow: rgba(112, 92, 92, 0.25) 0px 10px 10px, rgba(126, 121, 121, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+#Queue-list li:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.queue-center{
+    color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.Queue-card:hover img, .Queue-card:hover span{
+    opacity: 0.5;
+}
+
+.Queue-card:hover .queue-center{
+    opacity: 1;
+}
+
+
+.queue-song-title{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.queue-song-title-list{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.queue-song-title-list span{
+    color: lightgray;  
+    font-size: 0.7rem;
+}
+
+#main-title{
+    font-size: 0.9rem;
+}
+
+
+.queue-song-timer a{
+    color: lightgray;
+    font-size: 1rem;
+}
+
+
+
+
+/***---dropdown menu---*/
+
+.dropdown{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown label{
+    cursor: pointer;
+}
+
+.dropdown label:after{
+    content:"";
+    position:absolute;
+    display:block;
+    top: 15px;
+    right:-5px;
+    width:0;
+    height:0;
+    border-top:4px solid rgba(255,255,255,.5);
+    border-bottom:0 solid rgba(255,255,255,.5);
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    transition:border-bottom .1s, border-top .1s .1s;
+}
+
+.dropdown label{
+    color: aqua;
+    font-size: 0.7rem;
+}
+
+.dropdown input:checked ~ label:after{
+    border-top:0 solid rgba(255,255,255,.5);
+    border-bottom:4px solid rgba(255,255,255,.5);
+    transition:border-top .1s, border-bottom .1s .1s;
+}
+
+.dropdown input{
+    display:none
+}
+
+.dropdown input:checked ~ div#dropdown-menu{
+    opacity: 1;
+    z-index: 1;
+}
+
+#dropdown-menu{
+    width: 13%;
+    background-color: var(--dropdown_bg);
+    position: fixed;
+    right: 70px;
+    top: 120px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    height: auto;
+    z-index: -2;
+    border-radius: 10px;
+    
+}
+
+#dropdown-menu ul{
+    padding-left: 0px;
+}
+
+#dropdown-menu li{
+    padding: 12px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+#dropdown-menu li:hover{
+    background-color: var(--dropdown_hover_bg);
+}
+
+
+#dropdown-menu a{
+    color: lightgray;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+
+
+
+
+/*-----------------------Media Queries-------------------*/
+
+@media screen and (max-width:1342px){
+
+    #Popular-Artists-box, #Latest-English-box, 
+    #Latest-Hindi-box, #stations-list {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width:1150px){
+    main{
+        width: 65%;
+    }
+
+    aside{
+        width: 30%;
+    }
+
+    /**Footer**/
+    #footer-controls{
+        width: 40%;
+    }
+}
+
+
+
+@media screen and (max-width:1007px){   
+
+    /** Latest Release**/
+
+    #Latest-Release{
+        width: 100%;
+    }
+
+
+    aside{
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+    
+    main{
+        width: 100%;
+    }
+
+    /**Footer**/
+    #f-song-icons{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:890px){
+    #fav{
+        display: none;
+    }
+
+    /**Search form**/
+    #search-bar input{
+        width: 24vw;
+    }
+
+
+    /**Footer**/
+    #footer-song-info{
+        width: 60%;
+    }
+
+    #footer-controls{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #fc-box{
+        justify-content: center;
+    }
+
+    .bi-pause-circle{
+        font-size: 40px;
+    }
+
+    #footer-sound, #fc-bar, .bi-shuffle, .bi-caret-left-fill, .bi-caret-right-fill, .bi-arrow-repeat{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:613px){
+
+    /**navbar**/
+    nav{
+        height: 20vh;
+    }
+    
+    #search-bar form{
+        display: none;
+    }
+
+    #search-bar-2 form{
+        display: block;
+        width: 100%;
+        display: flex;
+    }
+
+    #search-bar-2 input{
+        width: 95%;
+    }
+
+
+
+    #main-container, main{
+        height: 70vh;
+    }
+
+
+    /**Latest Release**/
+    .row{
+        flex-direction: column;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    
+    .col{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:394px){
+
+    /*navbar logo**/
+    #logo-name{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/common.css">
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+
+
+
+<! --------------------------- Navbar ---------------------------->
+
+    <nav>
+        <div class="container">
+
+        <!---------left navbar items---------->
+
+            <div id="left-navbar">
+
+                <!-------logo------->
+                <div>
+                    <a href="#" id="logo-link">
+
+                        <img class="f-left" src="assets/Images/logo.jpg" alt="" width="50" height="50">
+
+                        <div id="logo-name">
+                            Music <span>Studio</span>
+                        </div>  
+
+                    </a>
+                </div>
+
+                <!------Favourites Heading------->
+
+                <div id="fav" style="color: lightgray;">
+                    <span>Favourites</span>
+                </div>
+
+
+            </div>
+
+        <!---------right navbar items------------->
+
+            <div id="search-bar">
+
+                <!-------search form input------->
+                <form action="">
+                    <a href="#"><i class="bi bi-search" style="color: lightgray;"></i></a>
+                    <input type="text" name="Search" id="search" placeholder="Search">
+                    <a href="#"><i class="bi bi-mic" style="color: lightgray;"></i></a>
+                </form>
+
+                <!------notification bell------>
+                <span>
+                    <a href="#"><i class="bi bi-bell" style="font-size: 1.3rem;color: white;"></i></a>
+                </span>
+    
+                <!-------profile icon---------->
+                <div id="profile-icon">
+                    <a href="#"><img src="assets/Images/icons8-test-account-100.png" alt="" width="40" height="40"></a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!---------search bar on mobile view size------------->
+        <div class="container" id="search-bar-2">
+            <form action="">
+                <a href="#"><i class="bi bi-search" style="color: lightgray;"></i></a>
+                <input type="text" name="Search" id="search" placeholder="Search">
+                <a href="#"><i class="bi bi-mic" style="color: lightgray;"></i></a>
+            </form>
+        </div>
+
+
+    </nav>
+    <!-------------------------End of Navbar--------------------------------->
+
+
+    <div id="main-container">
+
+    <! -----------------------------Main------------------------------------->
+
+
+    <main>
+
+            <!-----------------Music Cards---------------->    
+        
+            <div id="outer-music-cards">
+                <div id="music-cards">
+                    <a href="#"><img id="card1" src="assets/Images/Music Cards/Cover 1.jpg" alt=""></a>
+                    <a href="#"><img id="card2" src="assets/Images/Music Cards/maxresdefault.jpg" alt=""></a>
+                    <a href="#"><img id="card3" src="assets/Images/Music Cards/Cover 2.jpg" alt=""></a>
+                </div>
+            </div>
+
+
+            <!-----------------Latest Release----------------------> 
+    
+            <div id="Latest-Release">
+
+                <h4>Latest Release</h4>
+
+
+                <div class="row">
+
+                    <!----------Song card 1----------->
+                    <div class="col">
+
+                        <a href="#f-song-player">
+                            <div class="lr-box f-left">
+                                <img src="assets/Images/Latest Release/Excuses.jpg" alt="">
+                                <div class="lr-center">
+                                    <i class="bi bi-play"></i>
+                                </div>
+                            </div>  
+
+                            <div class="song-title">
+                                <div class="song-title-list">
+                                    <span style="color: lightgray;">Excuses</span>
+                                    <span style="font-size: 11px;">JUL 24,&nbsp; 2020</span>
+                                </div>
+                            </div>
+                        </a> 
+
+                        <div class="song-timer">
+
+                            <label for="check02"><i class="bi bi-three-dots"></i></label>
+                            <input id="check02" type="checkbox">
+
+                            <div id="song-dropdown-menu">
+                                <ul>
+                                    <a href="#f-song-player"><i class="bi bi-play-fill"></i><li>Play Now</li></a>
+                                    <a href="#"><i class="bi bi-plus-lg"></i><li>Add to Queue</li></a>
+                                    <a href="#"><i class="bi bi-bag-plus-fill"></i><li>Add to Playlist</li></a>
+                                    <a href="#"><i class="bi bi-info-circle-fill"></i><li>Get Info</li></a>
+                                </ul>
+                            </div>   
+
+                            <span>4:44</span>
+                        </div>  
+
+                    </div>
+
+
+                    <!----------Song card 2----------->
+                    <div class="col">
+
+                        <a href="#f-song-player">
+                            <div class="lr-box f-left">
+                                <img src="assets/Images/Latest Release/No lie.jpg" alt="">
+                                <div class="lr-center">
+                                    <i class="bi bi-play"></i>
+                                </div>
+                            </div> 
+
+                            <div class="song-title">
+                                <div class="song-title-list">
+                                    <span style="color: lightgray;">No Lie</span>
+                                    <span style="font-size: 11px;">NOV 18,&nbsp; 2016</span>
+                                </div>
+                            </div>
+                        </a> 
+
+                        <div class="song-timer">
+
+                            <label for="check03"><i class="bi bi-three-dots"></i></label>
+                            <input id="check03" type="checkbox">
+
+                            <div id="song-dropdown-menu">
+                                <ul>
+                                    <a href="#f-song-player"><i class="bi bi-play-fill"></i><li>Play Now</li></a>
+                                    <a href="#"><i class="bi bi-plus-lg"></i><li>Add to Queue</li></a>
+                                    <a href="#"><i class="bi bi-bag-plus-fill"></i><li>Add to Playlist</li></a>
+                                    <a href="#"><i class="bi bi-info-circle-fill"></i><li>Get Info</li></a>
+                                </ul>
+                            </div>   
+
+                            <span>4:44</span>
+
+                        </div>  
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="row">
+
+                    <!----------Song card 3----------->
+                    <div class="col">
+
+                        <a href="#f-song-player">
+                            <div class="lr-box f-left">
+                                <img src="assets/Images/Latest Release/gaj ka daaman.jpg" alt="">
+                                <div class="lr-center">
+                                    <i class="bi bi-play"></i>
+                                </div>
+                            </div>   
+
+                            <div class="song-title">
+                                <div class="song-title-list">
+                                    <span style="color: lightgray;">52 Gaj ka Daman (Hindi)</span>
+                                    <span style="font-size: 11px;">SEP 11,&nbsp; 2021</span>
+                                </div>
+                            </div>
+                        </a> 
+
+                        <div class="song-timer">
+
+                            <label for="check04"><i class="bi bi-three-dots"></i></label>
+                            <input id="check04" type="checkbox">
+
+                            <div id="song-dropdown-menu">
+                                <ul>
+                                    <a href="#f-song-player"><i class="bi bi-play-fill"></i><li>Play Now</li></a>
+                                    <a href="#"><i class="bi bi-plus-lg"></i><li>Add to Queue</li></a>
+                                    <a href="#"><i class="bi bi-bag-plus-fill"></i><li>Add to Playlist</li></a>
+                                    <a href="#"><i class="bi bi-info-circle-fill"></i><li>Get Info</li></a>
+                                </ul>
+                            </div>   
+
+                            <span>4:44</span>
+
+                        </div>     
+
+                    </div>
+
+
+                    <!----------Song card 4----------->
+                    <div class="col">
+
+                        <a href="#f-song-player">
+                            <div class="lr-box f-left">
+                                <img src="assets/Images/Latest Release/Rait zara si.jpg" alt="">
+                                <div class="lr-center">
+                                    <i class="bi bi-play"></i>
+                                </div>
+                            </div>  
+
+                            <div class="song-title">
+                                <div class="song-title-list">
+                                    <span style="color: lightgray;">Rait Zara Si</span>
+                                    <span style="font-size: 11px;">DEC 06,2021</span>
+                                </div>
+                            </div>
+                        </a> 
+
+                        <div class="song-timer">
+
+                            <label for="check05"><i class="bi bi-three-dots"></i></label>
+                            <input id="check05" type="checkbox">
+
+                            <div id="song-dropdown-menu">
+                                <ul>
+                                    <a href="#f-song-player"><i class="bi bi-play-fill"></i><li>Play Now</li></a>
+                                    <a href="#"><i class="bi bi-plus-lg"></i><li>Add to Queue</li></a>
+                                    <a href="#"><i class="bi bi-bag-plus-fill"></i><li>Add to Playlist</li></a>
+                                    <a href="#"><i class="bi bi-info-circle-fill"></i><li>Get Info</li></a>
+                                </ul>
+                            </div>   
+
+                            <span>4:44</span>
+
+                        </div>    
+
+                    </div>
+
+            </div>
+
+        </div> 
+        <!-------------------End of Latest Release------------->
+
+
+        <!------------------Popular Artists---------------------> 
+    
+            <div id="Popular-Artists">
+
+                <div id="popular-artists-title">
+                    <h4>Popular Artists</h4>
+                </div>
+
+
+                <div id="Popular-Artists-box">
+                    <a href="playlists.html">
+                        <div class="artists-card">
+                            <img src="assets/Images/Artists/Arijit.jpg" alt="">
+                            <div class="pa-center">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                            <span>Arijit Singh</span>
+                        </div>
+                    </a>
+    
+                    <a href="playlists.html">
+                        <div class="artists-card">
+                            <img src="assets/Images/Artists/billie eilish.webp" alt="">
+                            <div class="pa-center">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                            <span>Billie Eilish</span>
+                        </div>
+                    </a>
+    
+                    <a href="playlists.html">
+                        <div class="artists-card">
+                            <img src="assets/Images/Artists/Ed sheeran.jpg" alt="">
+                            <div class="pa-center">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                            <span>Ed Sheeran</span>
+                        </div>
+                    </a>
+    
+                    <a href="playlists.html">
+                        <div class="artists-card">
+                            <img src="assets/Images/Artists/Shreya.jpg" alt="">
+                            <div class="pa-center">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                            <span>Shreya Ghoshal</span>
+                        </div>
+                    </a>
+    
+                    <a href="playlists.html">
+                        <div class="artists-card">
+                            <img src="assets/Images/Artists/Selena.jpg" alt="">
+                            <div class="pa-center">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                            <span>Selena Gomez</span>
+                        </div>
+                    </a>
+    
+                    <a href="playlists.html">
+                        <div class="artists-card">
+                            <img src="assets/Images/Artists/Shawn.jpg" alt="">
+                            <div class="pa-center">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                            <span>Shawn Mendes</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <!------------End of Popular Artists-------->
+
+
+        <!--------------Stations----------------->     
+
+
+            <div id="Stations">
+
+                <div id="stations-logo">
+                    <div id="stations-logo-box">
+                        <img src="assets/Images/Stations/Stations Logo.jpg" alt="">
+                        <div class="stations-title">
+                            Stations
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="stations-list">
+                    <div class="stations-card">
+                        <a href="#">
+                            <img src="assets/Images/Stations/Love Station.jpg" alt=""">
+                            <div class="stations-text">
+                                Love
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="stations-card">
+                        <a href="#">
+                            <img src="assets/Images/Stations/Retro Station.jpg" alt=""">
+                            <div class="stations-text">
+                               Retro
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="stations-card">
+                        <a href="#">
+                            <img src="assets/Images/Stations/Chill Station.png" alt=""">   
+                            <div class="stations-text">
+                                Chill
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="stations-card">
+                        <a href="#">
+                            <img src="assets/Images/Stations/Workout Station.jpg" alt=""">
+                            <div class="stations-text">
+                                Workout
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="stations-card">
+                        <a href="#">
+                            <img src="assets/Images/Stations/Rock Station.jpg" alt=""">                      
+                            <div class="stations-text">
+                                Rock
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="stations-card">
+                        <a href="#">
+                            <img src="assets/Images/Stations/Pop Station.jpg" alt=""">
+                            <div class="stations-text">
+                                Pop
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-----------End of Stations-------->
+
+
+
+        <!------------------Genre-------------->    
+
+
+            <div id="Genre">
+
+                <div id="genre-div-box">
+                    <a href="#">
+                        <div class="genre-box">
+                            <img src="assets/Images/Genre/Party.webp" alt="">
+                            <div class="genre-text">
+                                Party
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="#">
+                        <div class="genre-box">
+                            <img src="assets/Images/Genre/Electronic.jpg" alt="">
+                            <div class="genre-text">
+                                Electronic
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="#">
+                        <div class="genre-box">
+                            <img src="assets/Images/Genre/Road Trip.jpg" alt="">
+                            <div class="genre-text">
+                                Road Trip
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+            <!-------------End of Genre---------------->
+
+
+        <!------------------Latest English--------------> 
+        
+
+        <div id="Latest-English">
+
+            <div id="latest-english-title">
+                <h4>Latest English</h4>
+            </div>
+
+
+            <div id="Latest-English-box">
+                <a href="#f-song-player">
+                    <div class="english-card">
+                        <img src="assets/Images/Latest English/Fall.jpg" alt="">
+                        <div class="le-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Fall</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="english-card">
+                        <img src="assets/Images/Latest English/Heat Waves.jpg" alt="">
+                        <div class="le-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Heat Waves</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="english-card">
+                        <img src="assets/Images/Latest English/Industry Baby.jpeg" alt="">
+                        <div class="le-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Industry Baby</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="english-card">
+                        <img src="assets/Images/Latest English/No Lie.jpg" alt="">
+                        <div class="le-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>No Lie</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="english-card">
+                        <img src="assets/Images/Latest English/Safari.jpg" alt="">
+                        <div class="le-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Safari</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="english-card">
+                        <img src="assets/Images/Latest English/Stay.jpg" alt="">
+                        <div class="le-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Stay</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <!-----------End of Latest English---------->
+
+
+
+        <!------------------Latest Hindi--------------> 
+        
+
+        <div id="Latest-Hindi">
+
+            <div id="latest-hindi-title">
+                <h4>Latest Hindi</h4>
+            </div>
+
+
+            <div id="Latest-Hindi-box">
+                <a href="#f-song-player">
+                    <div class="hindi-card">
+                        <img src="assets/Images/Latest Hindi/Dil ko karaar aaya.jpg" alt="">
+                        <div class="lh-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Dil ko karaar Aaya</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="hindi-card">
+                        <img src="assets/Images/Latest Hindi/Hawayein.jpg" alt="">
+                        <div class="lh-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Hawayein</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="hindi-card">
+                        <img src="assets/Images/Latest Hindi/Jugnu.webp" alt="">
+                        <div class="lh-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Jugnu</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="hindi-card">
+                        <img src="assets/Images/Latest Hindi/Rait Zara Si.jpg" alt="">
+                        <div class="lh-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Rait Zara Si</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="hindi-card">
+                        <img src="assets/Images/Latest Hindi/Shayad.jpg" alt="">
+                        <div class="lh-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Shayad</span>
+                    </div>
+                </a>
+
+                <a href="#f-song-player">
+                    <div class="hindi-card">
+                        <img src="assets/Images/Latest Hindi/Teri Mitti.jpg" alt="">
+                        <div class="lh-center">
+                            <i class="bi bi-play"></i>
+                        </div>
+                        <span>Teri Mitti</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <!----------End of Latest Hindi---------------->
+
+
+
+    </main>
+    <!------------------------End of Main---------------------------->
+    
+        
+
+
+<!-----------------------Aside------------------------------>
+
+        <aside> 
+
+            <div id="queue">
+
+                <!------------Queue Head Section-------->
+                <div id="Queue">
+
+                    <span>Queue</span>
+    
+                    <div class="dropdown">
+                        <input id="check01" type="checkbox" name="menu"/>
+                        <label for="check01">Queue &nbsp;</label>
+
+                        <div id="dropdown-menu">
+                            <ul>
+                                <a href="#"><li>Playlists</li></a>
+                                <a href="#"><li>Favourite Songs</li></a>
+                            </ul>
+                        </div>
+
+                    </div>
+    
+                </div>
+
+
+    
+                <!------------Queue Song lists------------->
+                <div id="Queue-list">
+    
+                    <ol>
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest Release/Excuses.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Excuses</span>
+                                            <span>AP Dhillon</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest Release/gaj ka daaman.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">52 Gaj ka Daman</span>
+                                            <span>Asees Kaur</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest English/Fall.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Fall</span>
+                                            <span>Davido</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest English/Heat Waves.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Heat Waves</span>
+                                            <span>Glass Animals</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest English/Industry Baby.jpeg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Industry Baby</span>
+                                            <span>Lil Nas X</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest English/No Lie.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">No Lie</span>
+                                            <span>Dua Lipa</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest English/Safari.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Safari</span>
+                                            <span>Serena</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest English/Stay.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Stay</span>
+                                            <span>Justin Bieber</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest Hindi/Dil ko karaar aaya.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Dil ko karaar aaya</span>
+                                            <span>Yasser Desai</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest Hindi/Hawayein.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Hawayein</span>
+                                            <span>Arijit Singh</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest Hindi/Jugnu.webp" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Jugnu</span>
+                                            <span>Badshaah</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest Hindi/Rait Zara Si.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Rait Zara Si</span>
+                                            <span>Arijit Singh</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest Hindi/Shayad.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Shayad</span>
+                                            <span>Arijit Singh</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#f-song-player">
+                                <div class="Queue-card">
+                                    <div class="f-left">
+                                        <img src="assets/Images/Latest Hindi/Teri Mitti.jpg" alt="" width="50" height="50">
+                                        <div class="queue-center">
+                                            <i class="bi bi-play-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="queue-song-title">
+                                        <div class="queue-song-title-list">
+                                            <span id="main-title">Teri Mitti</span>
+                                            <span>B Praak</span>
+                                        </div>
+                                        <div class="queue-song-timer">
+                                            <span><a href="#"><i class="bi bi-heart"></i></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+    
+                    </ol>
+    
+    
+                </div>
+
+
+
+
+            </div>
+
+        </aside>
+        <!--------------------------------End of Aside-------------------------------->
+
+    </div>    
+
+
+
+        <!-------------------------Footer Song Player--------------------------------------->    
+
+        <footer id="f-song-player">
+            <div id="footer-box">
+
+
+                <div id="footer-song-info">
+                    <div id="f-song-img">
+                        <img src="assets/Images/Playlists List/Chhichhore.jpg" alt="">
+                    </div>
+                    <div id="f-song-title">
+                        <div><span id="f-song-main-title">Chhichhore</span></div>
+                        <div id="f-song-sub-title"><span>Arijit Singh</span></div>
+                    </div>
+                    <div id="f-song-icons">
+                        <span><i class="bi bi-heart"></i>&nbsp;</span>
+                        <span><i class="bi bi-slash-circle"></i></span>
+                    </div>
+                </div>
+
+
+
+                <div id="footer-controls">
+                    <div id="fc-box">
+                        <div id="fc-icons">
+                            <a href="#f-song-player"><span><i class="bi bi-shuffle"></i></span></a>                
+                            <a href="#f-song-player"><span><i class="bi bi-caret-left-fill"></i></span></a>                        
+                            <a href="#f-song-player"><span><i class="bi bi-pause-circle"></i></span></a>                     
+                            <a href="#f-song-player"><span><i class="bi bi-caret-right-fill"></i></span></a>
+                            <a href="#f-song-player"><span><i class="bi bi-arrow-repeat"></i></span></a>                 
+                        </div>
+        
+                        <div id="fc-bar">
+                            <input type="range">
+                        </div>  
+                    </div>
+                </div>
+
+
+
+                <div id="footer-sound">
+                    <div>
+                        <span><i class="bi bi-bag-plus-fill"></i></span>
+                        <span><i class="bi bi-pc-display"></i></span>
+                        <span><i class="bi bi-volume-up"></i></span>
+                        <input type="range">
+                        <span><i class="bi bi-arrows-angle-expand"></i></span>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+        <!-------------------------End of Footer Song Player--------------------------------->
+
+
+</body>
+</html>
